@@ -7,14 +7,14 @@ public class Lotto {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		//printLotto();
-		new Lotto().printLotto();
+		new Lotto().getLotto();
 	}
-	public void printLotto() {
+	public int[] getLotto() {
+		int[] numbers = new int[6]; 
 		for (int i = 0; i < 6; i++) {
-			System.out.println(getNumber());
-			
+			numbers [i] = getNumber();
 		}
+		return numbers;
 	}
 
 	static Random random = new Random();
